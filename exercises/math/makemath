@@ -1,0 +1,2 @@
+math.exe : math.cs
+	mcs -out:math.exe math.cs
