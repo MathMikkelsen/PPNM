@@ -1,2 +1,6 @@
-math.exe : math.cs
-	mcs -out:math.exe math.cs
+gamma.dll: gamma.cs
+	mcs -target:library -out:gamma.dll gamma.cs
+main.exe : matgamma.cs gamma.dll
+	mcs -target:exe -out:main.exe -reference:gamma.dll matgamma.cs
+clean:
+	rm -f gamma.dll main.exe	
