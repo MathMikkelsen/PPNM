@@ -1,0 +1,7 @@
+lowest double x=2.22044604925031E-16
+lowest float y=1.192093E-07
+a==b ? False
+a>1 ? False
+b>1 = True
+The reason it fails for a is that it adds a number under the machine epsilon, which still gives 1
+False
