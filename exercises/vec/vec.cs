@@ -39,5 +39,9 @@ public class vec{
 		}
 	public static bool approxd(double a, double b){return approx(a,b);}
 	public static bool approx(vec u, vec v) => u.approx(v);
+	public double norm() => Sqrt(this.x*this.x+this.y*this.y+this.z*this.z);
+	public static double norm(vec u) => Sqrt(u.x*u.x+u.y*u.y+u.z*u.z);
+	public vec cross(vec other) => new vec(this.y*other.z-this.z*other.y,this.z*other.x-this.x*other.z,this.x*other.y-this.y*other.x);
+	public static vec cross(vec u, vec v) => new vec(u.y*v.z-u.z*v.y,u.z*v.x-u.x*v.z,u.x*v.y-u.y*v.x);
 	public override string ToString(){ return $"{x} {y} {z}"; }
 }

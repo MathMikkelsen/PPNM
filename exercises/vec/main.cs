@@ -43,6 +43,21 @@ static int Main(){
 	d.print("d =");
 	if(vec.approxd(d,u%v))WriteLine("test 'operator%' passed\n");
 
+	t=new vec(u.y*v.z-u.z*v.y,u.z*v.x-u.x*v.z,u.x*v.y-u.y*v.x);
+	vec.cross(u,v).print("u cross v =");
+	t.print("t =");
+	if(vec.approx(t,vec.cross(u,v)))WriteLine("test 'crossproduct' passed\n");
+
+	double norm = Sqrt(u%u);
+	double unorm = u.norm();
+	double vecnorm = vec.norm(u);
+	norm.print("Sqrt(u%u) =");
+	unorm.print("u.norm() =");
+	vecnorm.print("vec.norm(u) =");
+	if(vec.approxd(norm,unorm))WriteLine("test 'object norm' passed\n");
+	if(vec.approxd(norm,vecnorm))WriteLine("test 'static norm' passed\n");
+
+
 	return 0;
 	}	
 
