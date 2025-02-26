@@ -1,0 +1,10 @@
+R:
+      1.25       1.25      0.542       1.13 
+         0      0.876       1.13       1.15 
+         0          0       0.42     -0.206 
+         0          0          0      0.623 
+Q^T Q = unity is True
+QR equals A is True
+QR.det(R)=0.00919366640413579
+
+Rx=Q^Tb is True

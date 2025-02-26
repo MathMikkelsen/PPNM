@@ -106,7 +106,6 @@ public static vector operator* (matrix a, vector v){
 		u[i]+=a[i,k]*v[k];
 	return u;
 	}
-
 public static vector operator% (matrix a, vector v){
 	var u = new vector(a.size2);
 	for(int k=0;k<a.size1;k++)
