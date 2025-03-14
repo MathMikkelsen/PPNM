@@ -2,4 +2,4 @@ This is my repository for Practical Programming and Numerical Methods, used to s
 
 Homework points |A|B|C|TOT|
 
-Lineq |-|-|-|0|
+Lineq |6|-|-|6|
